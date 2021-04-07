@@ -1,0 +1,40 @@
+
+		h1 { 
+  display: block;
+  font-size: 20em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0px;
+  margin-right: 0;
+  font-weight: bold;
+  color: green;
+  font-family: sans-serif;
+}
+
+  img{
+    border-radius: 50%;
+    width:600px;
+    height:600px;
+    object-fit: cover;
+  }
+
+  button{
+    margin: 0;
+    height: 80px;
+    width: 280px;
+    border-radius: 0px;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+
+  a{
+
+     text-decoration: none;
+  }
+
+  body{
+    background-color: pink;
+  }
