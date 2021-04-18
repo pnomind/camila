@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.div1{
+			margin: 0px;
+			padding: 0px;
+			background-color: pink;
+			width: 540px;
+      border-radius: 80px;
+		}
+
+		.div2{
+			display: inline-flex;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		button{
+			margin: 10px;
+			padding: 0px;
+			background-color: green;
+			color: white;
+			font-size: 80px;
+			font-family: sans-serif;
+			font-weight: bold;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			border-radius: 60px;
+         }
+
+         .button1{
+          background-color: gray;
+
+         }
+
+         .button2{
+         	background-color: black;
+         }
+
+         p{
+         	 height:150px;
+             width: 480px;
+             border-width: 2px;
+             color: white;
+             display: inline-block; 
+             margin: 0px;
+             font-size: 100px;
+             font-family: sans-serif;
+             text-align: right;
+             color: black;
+
+         }
+
+         body{
+          background-image: url("11.jpg");
+          background-size: cover;
+
+         }
+</style>
+</head>
+
+
+
+<body>
+  <br>
+<center>
+<div class="div1">
+   <div class="div2" style="margin-top:100px; ">
+   <p id="screen"></p>
+   </div>
+   <br>
+   <div class="div2">
+   <button onclick="pop1()">1</button>
+   <button onclick="pop2()">2</button>
+   <button onclick="pop3()">3</button>
+   <button onclick="pop10()" class="button1">+</button>
+   </div>
+   <br>
+   <div class="div2">
+   	<button onclick="pop4()">4</button>
+   	<button onclick="pop5()">5</button>
+   	<button onclick="pop6()">6</button>
+   	<button onclick="pop11()" class="button1">-</button>
+   </div>
+   <br>
+   <div class="div2">
+   	<button onclick="pop7()">7</button>
+   	<button onclick="pop8()">8</button>
+   	<button onclick="pop9()">9</button>
+    <button onclick="pop12()" class="button1">×</button>
+   </div>
+   <br>
+   <div class="div2">
+    <a href="3.html" style="text-decoration:none;"><button style="color: pink;background-color: gray;">←</button></a>
+   	<button onclick="pop16()">0</button>
+   	<button class="button1" onclick="pop14()">C</button>
+   	<button class="button1" onclick="pop13()">÷</button>
+   </div>
+   <div class="div2" style="padding-bottom: 30px;"><button onclick="pop15()" class="button2" style="width: 480px;">=</button></div>
+</div>
+</center>
+
+
+<script>
+	var i ="";
+	var j="";
+	var k="";
+	var l="";
+	function pop1(){
+	i=i+"1";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop2(){
+	i=i+"2";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop3(){
+	i=i+"3";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop4(){
+	i=i+"4";
+    document.getElementById("screen").innerHTML=i;
+    }
+    function pop5(){
+    i=i+"5";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop6(){
+	i=i+"6";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop7(){
+    i=i+"7";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop8(){
+    i=i+"8";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop9(){
+	i=i+"9";
+    document.getElementById("screen").innerHTML=i;
+	}
+    function pop16(){
+	i=i+"0";
+    document.getElementById("screen").innerHTML=i;
+	}
+    function pop14(){
+	i="";
+    document.getElementById("screen").innerHTML=i;
+	}
+	function pop10(){
+    j=i;
+    l=1;
+    i="";
+	}
+	function pop11(){
+	j=i;
+    l=2;
+    i="";
+	}
+	function pop12(){
+	j=i;
+    l=3;
+    i="";
+	}
+	function pop13(){
+    j=i;
+    l=4;
+    i="";
+	}
+
+	function pop15(){
+        i=parseInt(i);
+        j=parseInt(j);
+		if (l==1) {
+        document.getElementById("screen").innerHTML=i+j;
+		}else if(l==2){
+        document.getElementById("screen").innerHTML=i-j;
+		}else if(l==3){
+        document.getElementById("screen").innerHTML=i*j;
+		}else if(l==4){
+        document.getElementById("screen").innerHTML=i/j;
+		}else{
+        document.getElementById("screen").innerHTML="NO INPUT";
+		}
+		i="";
+		j="";
+	}
+</script>
+</body>
+
+
+</html>
+
+
