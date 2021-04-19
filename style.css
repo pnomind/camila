@@ -1,9 +1,7 @@
        @font-face{
-     font-family: 'andrea'; 
-     src: url('/Users/chuibii./Documents/MyLaptop/Slides/Language/html/git/andrea.ttf') format('truetype');
+     font-family: 'andrea1'; 
+     src: url('andrea.ttf') format('truetype');
 }
-
-
 
 
 		h1 { 
