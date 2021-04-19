@@ -5,25 +5,26 @@
 	<title>i love u</title></head>
 <body>
 <center><h2 style="margin-top: 200px;font-size: 200px;color: green;font-weight: bold;font-family: sans-serif;">WHO IS THE NAUGHTY GIRL?</h2></center>
-<div><center>
+<div id="a1"><center>
 <a href="2.html" style="color: white;"><button>CLICK TO SEE</button></a>
 </center>
 </div>
 <script>
-	i=1;
+	i=true;
 	var timer = window.setInterval(func,100);
     function func(){
-    	if (i==1) {
+    	if (i) {
         document.querySelector("h2").style.color="green"; 
-
-          i=i+1;
-         }else if(i==2){
+             
+        
+         }else {
          document.querySelector("h2").style.color="white"; 
-          i=i-1;
-      
         }
+        i=!i
         
     }
+
+
 </script>
 </body>
 </html>
