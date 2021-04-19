@@ -9,6 +9,21 @@
 <a href="2.html" style="color: white;"><button>CLICK TO SEE</button></a>
 </center>
 </div>
+<script>
+	i=1;
+	var timer = window.setInterval(func,100);
+    function func(){
+    	if (i==1) {
+        document.querySelector("h2").style.color="green"; 
 
+          i=i+1;
+         }else if(i==2){
+         document.querySelector("h2").style.color="white"; 
+          i=i-1;
+      
+        }
+        
+    }
+</script>
 </body>
 </html>

@@ -50,7 +50,7 @@
              color: white;
              display: inline-block; 
              margin: 0px;
-             font-size: 101px;
+             font-size: 95px;
              font-family: sans-serif;
              text-align: right;
              color: black;
@@ -67,7 +67,7 @@
 
 
 
-<body>
+<body id="999">
   <br>
 <center>
    <div class="div1" style="margin-top:50px; height: 120px; margin-bottom: 20px;">
@@ -180,7 +180,8 @@
     i="";
     document.getElementById("screen").innerHTML="÷";
 	}
-
+  
+  var hh=true;
 	function pop15(){
         i=parseInt(i);
         j=parseInt(j);
@@ -195,9 +196,22 @@
 		}else{
         document.getElementById("screen").innerHTML="NO INPUT";
 		}
-		i=j;
+		i="";
 		j="";
+
 	}
+
+  var myback=1;
+  var timer = window.setInterval(time,500);
+  function time(){
+  if(myback==1){
+         document.getElementById("999").style.backgroundImage='url("./12.JPG")';
+         myback=myback+1;
+    } else {
+         document.getElementById("999").style.backgroundImage='url("./11.JPG")';
+         myback=myback-1;
+    }
+  }
 </script>
 </body>
 
