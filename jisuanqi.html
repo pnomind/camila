@@ -44,17 +44,17 @@
          }
 
          p{
-         	 height:150px;
+         	   height: 110px;
              width: 480px;
              border-width: 2px;
              color: white;
              display: inline-block; 
              margin: 0px;
-             font-size: 100px;
+             font-size: 101px;
              font-family: sans-serif;
              text-align: right;
              color: black;
-
+             position: relative;
          }
 
          body{
@@ -70,10 +70,10 @@
 <body>
   <br>
 <center>
-<div class="div1">
-   <div class="div2" style="margin-top:100px; ">
+   <div class="div1" style="margin-top:50px; height: 120px; margin-bottom: 20px;">
    <p id="screen"></p>
    </div>
+<div class="div1">
    <br>
    <div class="div2">
    <button onclick="pop1()">1</button>
@@ -160,21 +160,25 @@
     j=i;
     l=1;
     i="";
+    document.getElementById("screen").innerHTML="+";
 	}
 	function pop11(){
-	j=i;
+	 j=i;
     l=2;
     i="";
+    document.getElementById("screen").innerHTML="-";
 	}
 	function pop12(){
-	j=i;
+	  j=i;
     l=3;
     i="";
+    document.getElementById("screen").innerHTML="×";
 	}
 	function pop13(){
     j=i;
     l=4;
     i="";
+    document.getElementById("screen").innerHTML="÷";
 	}
 
 	function pop15(){
@@ -183,15 +187,15 @@
 		if (l==1) {
         document.getElementById("screen").innerHTML=i+j;
 		}else if(l==2){
-        document.getElementById("screen").innerHTML=i-j;
+        document.getElementById("screen").innerHTML=j-i;
 		}else if(l==3){
         document.getElementById("screen").innerHTML=i*j;
 		}else if(l==4){
-        document.getElementById("screen").innerHTML=i/j;
+        document.getElementById("screen").innerHTML=j/i;
 		}else{
         document.getElementById("screen").innerHTML="NO INPUT";
 		}
-		i="";
+		i=j;
 		j="";
 	}
 </script>
