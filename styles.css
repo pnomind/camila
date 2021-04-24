@@ -1,0 +1,121 @@
+body{
+	padding: 0;
+	margin:0;
+}
+
+
+
+.div2{
+	padding: 50px 100px 50px 100px;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	background-color: #dfe8e2;
+	overflow:auto;
+}
+
+.div3{
+	height: 40px;
+	display: flex;
+    padding: 10px 0 0 150px;
+    align-items: center;
+}
+
+.div4{
+	padding: 0px 220px 50px 220px;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: inline-flex;	
+}
+
+/* Style the navigation bar links */
+.navbar a {
+	color:#93e8d5;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+
+
+a{
+	font-size: 16px;
+	font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 40px 0 40px;
+}
+
+.p1{
+  width: 350px;
+}
+
+
+
+span{
+	font-family: sans-serif;
+	font-size: 16px;
+    font-weight: bold;
+	color: white;
+	margin:0 80px 0 20px;
+}
+
+input{
+	border: none;
+	background-color: white;
+	width: 600px;
+	height: 30px;
+	margin:0 100px 0 20px; 
+	 outline: none;
+	 padding: 0 0 0 20px;
+	 opacity:0.5;
+}
+
+button{
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	font-size: 20px;
+	color: #dfe8e2;
+
+	background-color: #24a68a;
+}
+
+h1{
+	color: red;
+	font-size: 40px;
+	padding-top: 100px;
+
+}
+
+h2{
+	font-size: 40px;
+	font-family: default;
+	color: black;
+
+}
+
+p{
+	margin: 0 100px 0 100px;
+	line-height: 35px;
+
+}
+
+em{
+	color:#72ccdb;
+	font-weight:bold;
+}

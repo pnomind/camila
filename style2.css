@@ -1,0 +1,35 @@
+body{
+	background-color: pink;
+}
+
+span{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+input{
+	border:none;
+	height: 30px;
+	width: 230px;
+	outline: none;
+	margin-bottom: 1px; 
+	font-size: 20px;
+}
+
+div{
+	border:solid 1px white; width: 400px; height: 350px; padding:20px 20px 20px 20px;margin: 50px;display: grid; grid-template:50px 50px 50px 50px 50px/30% 70%;
+    align-items: center;
+}
+
+button{
+	width: 344px;
+	margin: 0 30px 0 30px;
+	height: 30px;
+	font-size: 20px;
+	border:none;
+	background-color: white;
+	color: pink;
+
+}

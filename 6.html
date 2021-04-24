@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-<h1>Cat</h1>
-<?php
-print "<h2>PHP is Fun!</h2>";
-print "Hello world!<br>";
-print "I'm about to learn PHP!";
-?> 
+	<center>
+	<form action="first.php" method="POST">
+	<div>
+<span>NAME</span><input type="text" style="margin-left: 20px;" id="00" name="NAME" required>
+<span>SURNAME</span><input type="text" style="margin-left: 20px;" id="01" name="SURNAME" required>
+<span>AGE</span><input type="text" style="margin-left: 20px;" id="02" name="AGE" required>
+<span>GENDER</span><input type="text" style="margin-left: 20px;" id="03" name="GENDER" required>
+<span>TELEPHONE</span><input type="text" style="margin-left: 20px;" id="04" name="TELEPHONE" required >
+<button id="05" onclick="real()">Register</button>
 
+</div>
+<input type="submit" style="margin-top: 20px;">
+</form>
+<p style="margin-top: 50px; font-family: sans-serif;font-size: 30px;color: white;" id="06"></p>
+</center>
+
+<script type="text/javascript">
+	function real(){
+		var a=document.getElementById("00").value;
+		var b=document.getElementById("01").value;
+		var c=document.getElementById("02").value;
+		var d=document.getElementById("03").value;
+		var e=document.getElementById("04").value;
+    document.getElementById("06").innerHTML= a+b+c+d+e;
+    document.getElementById("00").value="";
+    document.getElementById("01").value="";
+    document.getElementById("02").value="";
+    document.getElementById("03").value="";
+    document.getElementById("04").value="";
+	}
+</script>
 </body>
 </html>
