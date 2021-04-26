@@ -174,7 +174,7 @@ em{
 }
 
 @keyframes example4 {
-  0%   {left:0; top:0px;}
+  0%   {left:0px; top:0px;}
   100% {left:-100%; top:0px;}
 }
 
