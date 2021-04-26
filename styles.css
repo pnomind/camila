@@ -24,6 +24,46 @@ body{
 .div4{
 	padding: 0px 220px 50px 220px;
 }
+
+.doi{
+  width: 100px;
+  height: 100px;
+  background-color: #72ccdb;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes example {
+  0%   {background-color:#72ccdb; left:0px; top:0px;}
+  25%  {background-color:#36b6aa; left:1580px; top:0px;}
+  50%  {background-color:#24a68a; left:1580px; top:745px;}
+  75%  {background-color:#36bfaa; left:0px; top:745px;}
+  100% {background-color:#72ccdb; left:0px; top:0px;}
+}
+
+.doo{
+  width: 100px;
+  height: 100px;
+  background-color: #24a68a;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+  0%   {background-color:#pink; left:0px; top:0px;}
+  25%  {background-color:yellow; left:1280px; top:400px;}
+  50%  {background-color:#72ccdb; left:680px; top:200px;}
+  75%  {background-color:#yellow; left:100px; top:400px;}
+  100% {background-color:#pink; left:100px; top:0px;}
+}
+
+
 /* Style the top navigation bar */
 .navbar {
   display: inline-flex;	
@@ -91,7 +131,6 @@ button{
 	border-radius: 25px;
 	font-size: 20px;
 	color: #dfe8e2;
-
 	background-color: #24a68a;
 }
 
@@ -118,4 +157,34 @@ p{
 em{
 	color:#72ccdb;
 	font-weight:bold;
+}
+
+
+.img1{
+  width: 100%;
+  position: relative;
+  animation-name: ;
+  animation-duration: 5s;
+}
+
+
+@keyframes example2 {
+  0%   {left:0px; top:0px;}
+  100% {left:-100%; top:0px;}
+}
+
+@keyframes example4 {
+  0%   {left:0; top:0px;}
+  100% {left:-100%; top:0px;}
+}
+
+
+@keyframes example3 {
+  0%   {left:-100%; top:0px;}
+  100% {left:0; top:0px;}
+}
+
+@keyframes example5 {
+  0%   {left:-100%; top:0px;}
+  100% {left:0; top:0px;}
 }

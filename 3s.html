@@ -30,9 +30,61 @@
          </div>
 
 
+  <div style="white-space:nowrap;overflow-x:auto;overflow-y:hidden; position: relative; overflow: hidden;font-size:0" id="p9">
+    <img id="p0">
+    <img class="img1" src="102.JPG" id="p1">
+    <img class="img1" id="p2">
+  </div>
 
-
-
+    <button style="position: absolute; top: 280px;left: 50px;color: white;background-color: rgba(123,123,123,0.5);" onclick="mn()"><</button>
+     <button style="position: absolute; top: 280px;right: 50px;color:white;background-color: rgba(123,123,123,0.5); " onclick="mm()">></button>
+     <br>
+     <div><p id="io" style="font-size: 50px;color: black;"></p></div>
 </div>
+<script type="text/javascript">
+  var i=103;
+  var z = document.getElementById("p1");
+    function mn(){
+        z.style.animationName="example2";
+        document.getElementById("p2").src=i+".JPG";
+        document.getElementById("p2").style.animationName="example4";
+      z.addEventListener("webkitAnimationEnd", myEndFunction);
+      function myEndFunction() {
+          z.src = i+".JPG";
+        document.getElementById("p2").src="";
+        if(i>=103){
+         i=100;
+        }
+        i=i+1;
+        document.getElementById("io").innerHTML=i;
+      }
+}
+
+
+
+    function mm(){
+      var j=i-2;
+      document.getElementById("p0").src=j+".JPG"; 
+      document.getElementById("p0").style.width="100%";
+      document.getElementById("p0").style.position="relative";
+      document.getElementById("p0").style.animationDuration="5s";
+      document.getElementById("p0").style.animationName="example5";
+       z.style.animationName="example3";
+ 
+
+
+      z.addEventListener("webkitAnimationEnd", myEndFunction1);
+      function myEndFunction1() {
+        z.src = j+".JPG";
+        document.getElementById("p0").src="";
+        document.getElementById("io").innerHTML=i;
+      }
+
+    }
+
+
+
+
+</script>
 </body>
 </html>

@@ -3,28 +3,55 @@
 <head>
  <link rel="stylesheet" href="style.css">
 	<title>i love u</title></head>
+    <style type="text/css">
+        .sp:hover{
+            font-style: italic;
+            transform: scale(0.6,0.6);
+        } 
+        
+        .sp{
+            transition: transform 1s;
+            margin-top: 200px;
+            font-size: 180px;
+            color: #123456;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+    </style>
 <body>
-<center><h2 style="margin-top: 200px;font-size: 200px;color: green;font-weight: bold;font-family: sans-serif;">WHO IS THE NAUGHTY GIRL?</h2></center>
+<center><h2 class="sp" id="ls">WHO IS THE NAUGHTY GIRL?</h2></center>
 <div id="a1"><center>
 <a href="2.html" style="color: white;"><button>CLICK TO SEE</button></a>
 </center>
 </div>
-<script>
-	i=true;
-	var timer = window.setInterval(func,100);
-    function func(){
-    	if (i) {
-        document.querySelector("h2").style.color="green"; 
-             
-        
-         }else {
-         document.querySelector("h2").style.color="white"; 
-        }
-        i=!i
-        
-    }
 
+<script>
+    var i=1;
+    l=true;
+    var timer = window.setInterval(func,100);
+    function func(){
+        var p=i.toString(16)+i.toString(16)+i.toString(16)+i.toString(16)+i.toString(16)+i.toString(16);
+        document.getElementById("ls").style.color="#"+p; 
+        var q=i+180;
+        document.getElementById("ls").style.fontSize=q  +"px"; 
+
+     if (l==true){
+        if (i>=15){
+            l=false;
+        }
+        i=i+1;
+     }
+     else {
+        if (i<=2){
+            l=true;
+        }
+        i=i-1;
+     }
+     }
+    
 
 </script>
+
 </body>
 </html>
